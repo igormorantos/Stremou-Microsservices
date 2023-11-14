@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Ngc9ECY53lcf9KtV50T+1ogn5He3kNQLkZfIJascQBESvUQwgiPgxcxd+LK4Qo3qCRHCzal2VDmppU3ojPQCdw==",
+  "dgSpecHash": "wje3ZqLaWzY8g0EK37P60LFs2L4Bj95abhrqZ0/V7M/1wB1Puma7vcBUzzsvNkk+8ehmfv+uxnp4Wztq1RcdHw==",
   "success": true,
-  "projectFilePath": "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Modules.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igor\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
+    "C:\\Users\\igor\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\igor\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\igor\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\igor\\.nuget\\packages\\netdevpack\\6.1.0\\netdevpack.6.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Domain.csproj": {}
+    "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Modules.Domain.csproj": {}
   },
   "projects": {
-    "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Domain.csproj": {
+    "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Modules.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Domain.csproj",
-        "projectName": "Stremou.Domain",
-        "projectPath": "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Domain.csproj",
+        "projectUniqueName": "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Modules.Domain.csproj",
+        "projectName": "Stremou.Modules.Domain",
+        "projectPath": "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\Stremou.Modules.Domain.csproj",
         "packagesPath": "C:\\Users\\igor\\.nuget\\packages\\",
         "outputPath": "D:\\portifa\\ArquiteturaMicroserviços\\src\\Modules\\Stremou.Domain\\obj\\",
         "projectStyle": "PackageReference",

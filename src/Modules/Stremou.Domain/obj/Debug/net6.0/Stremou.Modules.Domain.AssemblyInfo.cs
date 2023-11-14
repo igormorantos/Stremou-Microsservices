@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Stremou.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Stremou.Modules.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Stremou.Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Stremou.Domain")]
+[assembly: System.Reflection.AssemblyProductAttribute("Stremou.Modules.Domain")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Stremou.Modules.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
