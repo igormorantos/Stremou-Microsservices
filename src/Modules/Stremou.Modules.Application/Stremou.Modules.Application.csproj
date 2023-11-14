@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Handlers\Bill\Commands\" />
+    <Folder Include="Handlers\Bill\Handlers\" />
+    <Folder Include="Handlers\Bill\Requests\" />
+    <Folder Include="Handlers\Bill\Responses\" />
+    <Folder Include="Handlers\Recommendation\Commands\" />
+    <Folder Include="Handlers\Recommendation\Handlers\" />
+    <Folder Include="Handlers\Recommendation\Requests\" />
+    <Folder Include="Handlers\Recommendation\Responses\" />
+    <Folder Include="Handlers\StreamingSession\Commands\" />
+    <Folder Include="Handlers\StreamingSession\Handlers\" />
+    <Folder Include="Handlers\StreamingSession\Requests\" />
+    <Folder Include="Handlers\StreamingSession\Responses\" />
+    <Folder Include="Handlers\Tramission\Commands\" />
+    <Folder Include="Handlers\Tramission\Handlers\" />
+    <Folder Include="Handlers\Tramission\Requests\" />
+    <Folder Include="Handlers\Tramission\Responses\" />
+    <Folder Include="Handlers\User\Commands\" />
+    <Folder Include="Handlers\User\Handlers\" />
+    <Folder Include="Handlers\User\Responses\" />
+    <Folder Include="Handlers\User\Requests\" />
+    <Folder Include="Handlers\Video\Commands\" />
+    <Folder Include="Handlers\Video\Handlers\" />
+    <Folder Include="Handlers\Video\Requests\" />
+    <Folder Include="Handlers\Video\Responses\" />
+    <Folder Include="Services\Implementations\" />
+    <Folder Include="Validations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stremou.Domain\Stremou.Modules.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
