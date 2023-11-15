@@ -15,10 +15,10 @@ namespace Stremou.Domain.Contracts
 
         Task<IEnumerable<Video>> GetAllAsync();
 
-        Task AddAsync(Video video);
+        Task Add(Video video);
 
-        Task UpdateAsync(Video video);
+        Task Update(Video video);
 
-        Task DeleteAsync(Video video);
+        Task Delete(Video video);
     }
 }
