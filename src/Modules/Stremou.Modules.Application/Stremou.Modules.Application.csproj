@@ -18,32 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Handlers\Bill\Commands\" />
-    <Folder Include="Handlers\Bill\Handlers\" />
-    <Folder Include="Handlers\Bill\Requests\" />
-    <Folder Include="Handlers\Bill\Responses\" />
-    <Folder Include="Handlers\Recommendation\Commands\" />
-    <Folder Include="Handlers\Recommendation\Handlers\" />
-    <Folder Include="Handlers\Recommendation\Requests\" />
-    <Folder Include="Handlers\Recommendation\Responses\" />
-    <Folder Include="Handlers\StreamingSession\Commands\" />
-    <Folder Include="Handlers\StreamingSession\Handlers\" />
-    <Folder Include="Handlers\StreamingSession\Requests\" />
-    <Folder Include="Handlers\StreamingSession\Responses\" />
-    <Folder Include="Handlers\Tramission\Commands\" />
-    <Folder Include="Handlers\Tramission\Handlers\" />
-    <Folder Include="Handlers\Tramission\Requests\" />
-    <Folder Include="Handlers\Tramission\Responses\" />
-    <Folder Include="Handlers\User\Commands\" />
-    <Folder Include="Handlers\User\Handlers\" />
-    <Folder Include="Handlers\User\Responses\" />
-    <Folder Include="Handlers\User\Requests\" />
-    <Folder Include="Handlers\Video\Commands\" />
-    <Folder Include="Handlers\Video\Handlers\" />
-    <Folder Include="Handlers\Video\Requests\" />
-    <Folder Include="Handlers\Video\Responses\" />
     <Folder Include="Services\Implementations\" />
-    <Folder Include="Validations\" />
   </ItemGroup>
 
   <ItemGroup>
