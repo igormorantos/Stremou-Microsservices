@@ -10,9 +10,8 @@ namespace Stremou.Domain.Models
 {
     public class Bill : Entity, IAggregateRoot
     {
-        public Bill(Guid id, Guid userId, DateTime billDate, decimal totalAmount, string paymentStatus)
+        public Bill(Guid userId, DateTime billDate, decimal totalAmount, bool paymentStatus)
         {
-            Id = id;
             UserId = userId;
             BillDate = billDate;
             TotalAmount = totalAmount;
@@ -30,6 +29,6 @@ namespace Stremou.Domain.Models
 
         [Required(ErrorMessage = "The {0} field is required.")]
         [StringLength(100)]
-        public string PaymentStatus { get; private set; }
+        public bool PaymentStatus { get; private set; }
     }
 }

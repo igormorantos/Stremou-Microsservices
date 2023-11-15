@@ -1,4 +1,5 @@
 ﻿using NetDevPack.Domain;
+using Stremou.Modules.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,17 +12,14 @@ namespace Stremou.Domain.Models
     public class User : Entity, IAggregateRoot
     {
         private readonly List<Video> _watchedVideos = new List<Video>();
-        private readonly List<StreamingSession> _streamingSessions = new List<StreamingSession>();
 
-        public User(Guid id, string name, string email, string password, ViewingPreferences viewingPreferences)
+        public User(Guid id, string name, string email, string password, Cpf recommendation)
         {
-            Id = id;
             Name = name;
             Email = email;
             Password = password;
-            ViewingPreferences = viewingPreferences;
+            Recommendation = recommendation;
             _watchedVideos = new List<Video>();
-            _streamingSessions = new List<StreamingSession>();
         }
 
         [Required(ErrorMessage = "The {0} field is required.")]
@@ -38,19 +36,13 @@ namespace Stremou.Domain.Models
         public string? Password { get; private set; }
 
         [Required(ErrorMessage = "The {0} field is required.")]
-        public ViewingPreferences ViewingPreferences { get; private set; }
+        public Cpf Cpf { get; private set; }
 
         public IReadOnlyCollection<Video> WatchedVideos => _watchedVideos.AsReadOnly();
-        public IReadOnlyCollection<StreamingSession> StreamingSessions => _streamingSessions.AsReadOnly();
 
         public void AddWatchedVideo(Video video)
         {
             _watchedVideos.Add(video);
-        }
-
-        public void AddStreamingSession(StreamingSession session)
-        {
-            _streamingSessions.Add(session);
         }
     }
 }
