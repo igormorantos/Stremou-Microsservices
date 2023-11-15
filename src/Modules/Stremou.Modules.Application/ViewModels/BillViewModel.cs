@@ -11,23 +11,23 @@ namespace Stremou.Domain.Models
 {
     public class BillViewModel
     {
-        
+
         [Key]
         public Guid Id { get; set; }
 
-        [DisplayName("")]
+        [DisplayName("ID do Usuário")]
         [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
         public Guid UserId { get; private set; }
 
-        [DisplayName("")]
+        [DisplayName("Data da Fatura")]
         [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
         public DateTime BillDate { get; private set; }
 
-        [DisplayName("")]
+        [DisplayName("Valor Total")]
         [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
         public decimal TotalAmount { get; private set; }
 
-        [DisplayName("")]
+        [DisplayName("Status do Pagamento")]
         [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
         public string PaymentStatus { get; private set; }
     }

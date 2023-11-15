@@ -1,4 +1,5 @@
 ﻿using NetDevPack.Domain;
+using Stremou.Modules.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,9 +27,9 @@ namespace Stremou.Domain.Models
         [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
         public string? Password { get; private set; }
 
-        [DisplayName("Preferências de Visualização do Usuario")]
+        [DisplayName("Cpf do Usuario")]
         [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
-        public ViewingPreferences ViewingPreferences { get; private set; }
+        public Cpf Cpf { get; private set; }
 
     }
 }
