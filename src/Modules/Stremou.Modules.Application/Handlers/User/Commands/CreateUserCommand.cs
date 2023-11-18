@@ -22,7 +22,6 @@ namespace Stremou.Modules.Application.Handlers.User.Commands
         public UserEntity GetEntity()
         {
             return new UserEntity(
-                this.Id,
                 this.Name,
                 this.Email,
                 this.Password,
