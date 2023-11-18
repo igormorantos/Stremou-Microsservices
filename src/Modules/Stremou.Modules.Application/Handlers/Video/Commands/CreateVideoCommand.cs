@@ -11,6 +11,7 @@ namespace Stremou.Modules.Application.Handlers.Video.Commands
     {
        
         public Guid Id { get; set; }
+
         public string? Title { get; private set; }
 
         public string? Description { get; private set; }

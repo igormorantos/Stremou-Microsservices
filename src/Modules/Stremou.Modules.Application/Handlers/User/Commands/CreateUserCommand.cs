@@ -9,13 +9,14 @@ namespace Stremou.Modules.Application.Handlers.User.Commands
     public class CreateUserCommand : IRequest<CreateUserResponse>
     {
         public Guid Id { get; private set; }
+
         public string? Name { get; private set; }
 
         public string? Email { get; private set; }
 
         public string? Password { get; private set; }
 
-        public Cpf Recommendation { get; private set; }
+        public Cpf Cpf { get; private set; }
     
     
         public UserEntity GetEntity()
@@ -25,7 +26,7 @@ namespace Stremou.Modules.Application.Handlers.User.Commands
                 this.Name,
                 this.Email,
                 this.Password,
-                this.Recommendation
+                this.Cpf
                 );
         }
     

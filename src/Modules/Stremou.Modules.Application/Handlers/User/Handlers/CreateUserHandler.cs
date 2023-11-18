@@ -35,7 +35,7 @@ namespace Stremou.Modules.Application.Handlers.User.Handlers
                 try
                 {
                     var userEmail = await _userRepository.GetByEmail(command.Email);
-                    var userName = await _userRepository.GetByName(command.Name);
+                    var userName = await _userRepository.GetByCpf(command.Cpf);
                     
                     if (userName != null && userEmail != null)
                         return await Task.FromResult(new CreateUserResponse(command.Id, "User Alredy Exists"));
