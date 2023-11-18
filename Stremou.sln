@@ -13,9 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stremou.CrossCutting", "src\Infrastructure\Stremou.CrossCutting\Stremou.CrossCutting.csproj", "{8C9AA908-A2AF-4503-90F0-822C3BEB73C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stremou.Modules.Application", "src\Modules\Stremou.Modules.Application\Stremou.Modules.Application.csproj", "{014B446C-F222-4690-9211-4F1DD9E19ACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stremou.Modules.Application", "src\Modules\Stremou.Modules.Application\Stremou.Modules.Application.csproj", "{014B446C-F222-4690-9211-4F1DD9E19ACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stremou.Infrastructure", "src\Infrastructure\Stremou.Infrastructure\Stremou.Infrastructure.csproj", "{41C541AA-542F-46DC-B068-47F8EE859746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stremou.Infrastructure", "src\Infrastructure\Stremou.Infrastructure\Stremou.Infrastructure.csproj", "{41C541AA-542F-46DC-B068-47F8EE859746}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F520BF69-75F3-4926-BA71-A341FCEBD1FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stremou.Services.Authenticator", "src\Services\Stremou.Services.Authenticator\Stremou.Services.Authenticator.csproj", "{5C2DFDD3-3BBA-49A0-B7A9-B4E4D7E1767D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{41C541AA-542F-46DC-B068-47F8EE859746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41C541AA-542F-46DC-B068-47F8EE859746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41C541AA-542F-46DC-B068-47F8EE859746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2DFDD3-3BBA-49A0-B7A9-B4E4D7E1767D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2DFDD3-3BBA-49A0-B7A9-B4E4D7E1767D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2DFDD3-3BBA-49A0-B7A9-B4E4D7E1767D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2DFDD3-3BBA-49A0-B7A9-B4E4D7E1767D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,8 @@ Global
 		{8C9AA908-A2AF-4503-90F0-822C3BEB73C6} = {A6C386F6-9E61-4FC7-AF8A-381CF9D955C6}
 		{014B446C-F222-4690-9211-4F1DD9E19ACC} = {9D40098F-4731-4B5E-812D-131EDE5D57E9}
 		{41C541AA-542F-46DC-B068-47F8EE859746} = {A6C386F6-9E61-4FC7-AF8A-381CF9D955C6}
+		{F520BF69-75F3-4926-BA71-A341FCEBD1FD} = {6B463888-90B3-4753-B610-D93E45981614}
+		{5C2DFDD3-3BBA-49A0-B7A9-B4E4D7E1767D} = {F520BF69-75F3-4926-BA71-A341FCEBD1FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F016C4A-18CD-482D-85D1-FC808726950F}
