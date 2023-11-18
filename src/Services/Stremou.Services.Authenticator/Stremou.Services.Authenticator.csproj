@@ -12,11 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <ProjectReference Include="..\..\Modules\Stremou.Domain\Stremou.Modules.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Modules\Stremou.Domain\Stremou.Modules.Domain.csproj" />
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>

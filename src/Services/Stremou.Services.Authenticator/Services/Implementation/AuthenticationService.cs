@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Stremou.Domain.Models;
+using Stremou.Modules.Domain.ValueObjects;
 using System.Security.Claims;
 
 namespace Stremou.Services.Authenticator.Services.Implementation
@@ -16,9 +17,9 @@ namespace Stremou.Services.Authenticator.Services.Implementation
             _signInManager = signInManager;
         }
 
-        public async Task<IdentityResult> RegisterAsync(string name, string email, string password)
+        public async Task<IdentityResult> RegisterAsync(string name, string email, string password, Cpf cpf)
         {
-            var user = new User (name, email);
+            var user = new User (name, email, password, cpf);
             return await _userManager.CreateAsync(user, password);
         }
 
