@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Stremou.Infrastructure/1.0.0": {
+        "runtime": {
+          "Stremou.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Stremou.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\bin\Debug\net6.0\Stremou.CrossCutting.exe
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\bin\Debug\net6.0\Stremou.CrossCutting.deps.json
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\bin\Debug\net6.0\Stremou.CrossCutting.runtimeconfig.json
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\bin\Debug\net6.0\Stremou.CrossCutting.dll
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\bin\Debug\net6.0\Stremou.CrossCutting.pdb
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\Stremou.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\Stremou.CrossCutting.AssemblyInfoInputs.cache
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\Stremou.CrossCutting.AssemblyInfo.cs
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\Stremou.CrossCutting.csproj.CoreCompileInputs.cache
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\Stremou.CrossCutting.dll
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\refint\Stremou.CrossCutting.dll
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\Stremou.CrossCutting.pdb
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\Stremou.CrossCutting.genruntimeconfig.cache
+D:\portifa\ArquiteturaMicroserviços\src\Infrastructure\Stremou.CrossCutting\obj\Debug\net6.0\ref\Stremou.CrossCutting.dll
