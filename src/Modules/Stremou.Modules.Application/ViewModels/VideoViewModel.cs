@@ -1,12 +1,6 @@
-﻿using NetDevPack.Domain;
-using Stremou.Modules.Domain.Enum;
-using System;
-using System.Collections.Generic;
+﻿using Stremou.Modules.Domain.Enum;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Stremou.Domain.Models
 {
