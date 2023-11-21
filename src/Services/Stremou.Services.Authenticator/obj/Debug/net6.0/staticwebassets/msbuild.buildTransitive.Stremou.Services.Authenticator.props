@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Stremou.Services.Authenticator.props" />
+</Project>
