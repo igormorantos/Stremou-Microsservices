@@ -11,7 +11,7 @@ namespace Stremou.Domain.Contracts
     {
         Task<Video> GetByVideoUrl(string videoUrl);
 
-        Task<Video> GetByName(string name);
+        Task<Video> GetByTitle(string title);
 
         Task<IEnumerable<Video>> GetAllAsync();
 
