@@ -14,7 +14,7 @@ namespace Stremou.Modules.Application.Handlers.User.Requests
         public string? Email { get; set; }
 
 
-        public CheckUserExistsByEmailRequest(string? cpf, string? email)
+        public CheckUserExistsByEmailRequest(string? email)
         {
             Id = Guid.NewGuid();
             Email = email;

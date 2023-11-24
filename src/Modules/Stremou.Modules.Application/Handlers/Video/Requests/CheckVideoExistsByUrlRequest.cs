@@ -15,7 +15,7 @@ namespace Stremou.Modules.Application.Handlers.Video.Requests
 
         public string? VideoUrl { get; private set; }
 
-        public CheckVideoExistsByUrlRequest(Guid id, string? videoUrl)
+        public CheckVideoExistsByUrlRequest(string? videoUrl)
         {
             Id = Guid.NewGuid();
             VideoUrl = videoUrl;

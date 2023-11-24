@@ -28,7 +28,7 @@ namespace Stremou.Modules.Application.Handlers.User.Handlers
         {
 
             _logger.LogInformation($"CheckUserExistsByNameRequest: {JsonSerializer.Serialize(request)}");
-            var validationResult = new CheckUserExistsByNameRequestValidation().Validate(request);
+            var validationResult = new CheckUserExistsByCpfRequestValidation().Validate(request);
 
             if (validationResult.IsValid)
             {

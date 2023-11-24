@@ -10,17 +10,22 @@ namespace Stremou.Modules.Application.Handlers.Video.Commands
     public class CreateVideoCommand : IRequest<CreateVideoResponse>
     {
        
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
-        public string? Title { get; private set; }
+        public string? Title { get; set; }
 
-        public string? Description { get; private set; }
+        public string? Description { get; set; }
 
-        public Category Category { get; private set; }
+        public Category Category { get; set; }
 
-        public TimeSpan Duration { get; private set; }
+        public TimeSpan Duration { get; set; }
 
-        public string? VideoUrl { get; private set; }
+        public string? VideoUrl { get; set; }
+
+        public CreateVideoCommand()
+        {
+            Id = Guid.NewGuid();
+        }
 
         public VideoEntity GetEntity()
         {

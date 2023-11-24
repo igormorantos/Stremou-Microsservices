@@ -32,7 +32,7 @@ namespace Stremou.Modules.Application.Handlers.Video.Handlers
                     var VideoTitle = await _videoRepository.GetByName(command.Title);
 
                     if (VideoUrl != null && VideoTitle != null)
-                        return await Task.FromResult(new CreateVideoResponse(command.Id, "User Alredy Exists"));
+                        return await Task.FromResult(new CreateVideoResponse(command.Id, "Usuario já Existe"));
 
                     await _videoRepository.Add(command.GetEntity());
                     return await Task.FromResult(new CreateVideoResponse(command.Id, validationResult));

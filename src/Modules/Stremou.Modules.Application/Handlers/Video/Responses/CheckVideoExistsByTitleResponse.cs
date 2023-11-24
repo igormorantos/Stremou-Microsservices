@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace Stremou.Modules.Application.Handlers.Video.Responses
 {
-    public class CheckVideoExistsByNameResponse : Response
+    public class CheckVideoExistsByTitleResponse : Response
     {
         public Guid RequestId { get; private set; }
         public bool Exists { get; set; }
 
-        public CheckVideoExistsByNameResponse(Guid requestId, bool exists, ValidationResult result)
+        public CheckVideoExistsByTitleResponse(Guid requestId, bool exists, ValidationResult result)
         {
             RequestId = requestId;
             Exists = exists;
@@ -22,7 +22,7 @@ namespace Stremou.Modules.Application.Handlers.Video.Responses
                 this.AddError(item.ErrorMessage);
             }
         }
-        public CheckVideoExistsByNameResponse(Guid requestId, string falhaValidacao)
+        public CheckVideoExistsByTitleResponse(Guid requestId, string falhaValidacao)
         {
             RequestId = requestId;
             Exists = false;

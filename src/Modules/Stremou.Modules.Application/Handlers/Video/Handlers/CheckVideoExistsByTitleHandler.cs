@@ -13,38 +13,38 @@ using System.Threading.Tasks;
 
 namespace Stremou.Modules.Application.Handlers.Video.Handlers
 {
-    public class CheckVideoExistsByNameHandler : IRequestHandler<CheckVideoExistsByNameRequest, CheckVideoExistsByNameResponse>
+    public class CheckVideoExistsByTitleHandler : IRequestHandler<CheckVideoExistsByTitleRequest, CheckVideoExistsByTitleResponse>
     {
         private readonly IVideoRepository _videoRepository;
         private readonly ILogger<CheckVideoExistsByUrlHandler> _logger;
 
-        public CheckVideoExistsByNameHandler(IVideoRepository videoRepository, ILogger<CheckVideoExistsByUrlHandler> logger)
+        public CheckVideoExistsByTitleHandler(IVideoRepository videoRepository, ILogger<CheckVideoExistsByUrlHandler> logger)
         {
             _videoRepository = videoRepository;
             _logger = logger;
         }
-        public async Task<CheckVideoExistsByNameResponse> Handle(CheckVideoExistsByNameRequest request, CancellationToken cancellationToken)
+        public async Task<CheckVideoExistsByTitleResponse> Handle(CheckVideoExistsByTitleRequest request, CancellationToken cancellationToken)
         {
             _logger.LogInformation($"CheckVideoExistsByNameRequest: {JsonSerializer.Serialize(request)}");
-            var validationResult = new CheckVideoExistsByNameRequestValidation().Validate(request);
+            var validationResult = new CheckVideoExistsByTitleRequestValidation().Validate(request);
 
             if (validationResult.IsValid)
             {
                 try
                 {
-                    var UserName = await _videoRepository.GetByName(request.Name);
+                    var UserName = await _videoRepository.GetByTitle(request.Title);
 
                     if (UserName != null)
-                        return await Task.FromResult(new CheckVideoExistsByNameResponse(request.Id, true, validationResult));
+                        return await Task.FromResult(new CheckVideoExistsByTitleResponse(request.Id, true, validationResult));
                 }
                 catch (Exception ex)
                 {
                     _logger.LogCritical(ex.Message);
-                    return await Task.FromResult(new CheckVideoExistsByNameResponse(request.Id, "Não foi possivel Processar solicitação."));
+                    return await Task.FromResult(new CheckVideoExistsByTitleResponse(request.Id, "Não foi possivel Processar solicitação."));
                 }
             }
 
-            return await Task.FromResult(new CheckVideoExistsByNameResponse(request.Id, false, validationResult));
+            return await Task.FromResult(new CheckVideoExistsByTitleResponse(request.Id, false, validationResult));
 
         }
     }

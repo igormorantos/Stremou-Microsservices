@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace Stremou.Modules.Application.Handlers.Video.Requests
 {
-    public class CheckVideoExistsByNameRequest : IRequest<CheckVideoExistsByNameResponse>
+    public class CheckVideoExistsByTitleRequest : IRequest<CheckVideoExistsByTitleResponse>
     {
         public Guid Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string? Title { get; set; }
 
-        public CheckVideoExistsByNameRequest(string? name)
+        public CheckVideoExistsByTitleRequest(string? title)
         {
             Id = Guid.NewGuid();
-            Name = name;
+            Title = title;
         }
     }
 }

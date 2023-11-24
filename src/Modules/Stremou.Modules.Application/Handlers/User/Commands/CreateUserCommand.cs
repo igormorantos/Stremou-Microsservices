@@ -10,15 +10,19 @@ namespace Stremou.Modules.Application.Handlers.User.Commands
     {
         public Guid Id { get; private set; }
 
-        public string? Name { get; private set; }
+        public string? Name { get; set; }
 
-        public string? Email { get; private set; }
+        public string? Email { get; set; }
 
-        public string? Password { get; private set; }
+        public string? Password { get; set; }
 
-        public Cpf Cpf { get; private set; }
-    
-    
+        public Cpf Cpf { get; set; }
+        
+        public CreateUserCommand()
+        {
+            Id = Guid.NewGuid();
+        }
+
         public UserEntity GetEntity()
         {
             return new UserEntity(
