@@ -16,23 +16,14 @@ namespace Stremou.Domain.Models
             VideoUrl = videoUrl;
         }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
-        [StringLength(100)]
         public string? Title { get; private set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
-        [StringLength(450)]
         public string? Description { get; private set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
-        [StringLength(100)]
         public Category? Category { get; private set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
         public TimeSpan? Duration { get; private set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
-        [StringLength(450)]
         public string? VideoUrl { get; private set; }
     }
 }

@@ -13,17 +13,12 @@ namespace Stremou.Domain.Models
             PaymentStatus = paymentStatus;
         }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
         public Guid UserId { get; private set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
         public DateTime BillDate { get; private set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
         public decimal TotalAmount { get; private set; }
 
-        [Required(ErrorMessage = "The {0} field is required.")]
-        [StringLength(100)]
         public bool PaymentStatus { get; private set; }
     }
 }
