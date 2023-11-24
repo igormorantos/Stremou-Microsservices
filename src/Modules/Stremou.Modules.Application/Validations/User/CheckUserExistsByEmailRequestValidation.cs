@@ -10,6 +10,13 @@ namespace Stremou.Modules.Application.Validations.User
 {
     public class CheckUserExistsByEmailRequestValidation : AbstractValidator<CheckUserExistsByEmailRequest>
     {
-
+        public CheckUserExistsByEmailRequestValidation() 
+        {
+            RuleFor(a => a.Email)
+                .NotEmpty()
+                .WithMessage("O email não pode estar vazio.")
+                .EmailAddress()
+                .WithMessage("O email deve ser um endereço de email válido.");
+        }
     }
 }
