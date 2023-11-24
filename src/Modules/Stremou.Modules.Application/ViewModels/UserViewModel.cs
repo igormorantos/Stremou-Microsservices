@@ -13,23 +13,25 @@ namespace Stremou.Domain.Models
     public class UserViewModel
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
 
         [DisplayName("Nome do Usuario")]
-        [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
-        public string? Name { get; private set; }
+        [Required(ErrorMessage = "O campo Name deve ser preenchido.")]
+        public string? Name { get; set; }
 
         [DisplayName("Email do Usuario")]
-        [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
-        public string? Email { get; private set; }
+        [Required(ErrorMessage = "O campo Email deve ser preenchido.")]
+        [EmailAddress]
+        public string? Email { get; set; }
 
         [DisplayName("Senha do Usuario")]
-        [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
-        public string? Password { get; private set; }
+        [Required(ErrorMessage = "O campo Password deve ser preenchido.")]
+        [PasswordPropertyText]
+        public string? Password { get; set; }
 
         [DisplayName("Cpf do Usuario")]
-        [Required(ErrorMessage = "O {0} campo deve ser preenchido.")]
-        public Cpf Cpf { get; private set; }
+        [Required(ErrorMessage = "O campo Cpf deve ser preenchido.")]
+        public Cpf Cpf { get; set; }
 
     }
 }
